@@ -1,1 +1,0 @@
-web: gunicorn hazeeeee.wsgi --log-file -
