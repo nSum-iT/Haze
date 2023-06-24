@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'hazeeeee.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'haze',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'PASSWORD': 'oUrHCoGTvrV5ChBnJohP',
+        'HOST':'containers-us-west-166.railway.app',
+        'PORT':'7502',
     }
 }
 
