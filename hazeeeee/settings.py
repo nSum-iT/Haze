@@ -78,26 +78,28 @@ WSGI_APPLICATION = 'hazeeeee.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 
- #DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.mysql',
-   #     'USER': 'root',
-   #     'HOST':'localhost',
-    #    'PORT':'3306',
-   # }
-#}
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '2IyRAqQPicSfIZncTB5U',
-        'HOST':'containers-us-west-37.railway.app',
-        'PORT':'5712',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'haze',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
+
+
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.postgresql',
+   #     'NAME': 'railway',
+      #  'USER': 'postgres',
+     #   'PASSWORD': '2IyRAqQPicSfIZncTB5U',
+      #  'HOST':'containers-us-west-37.railway.app',
+      #  'PORT':'5712',
+ #   }
+#}
 
 
 # Password validation
