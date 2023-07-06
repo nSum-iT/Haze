@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qru=&*qatnm3#xq5)$u)j^@c53mh8mp3=e_r7fm5y)@5y_5n+x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,29 +78,28 @@ WSGI_APPLICATION = 'hazeeeee.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 
+#DATABASES = {
+    #'default': {
+       # 'ENGINE': 'django.db.backends.mysql',
+      #  'NAME': 'railway',
+       # 'USER': 'root',
+       # 'PASSWORD': 'oUrHCoGTvrV5ChBnJohP',
+       # 'HOST':'containers-us-west-166.railway.app',
+       # 'PORT':'7502',
+   # }
+#}
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
+        'NAME': 'haze',
         'USER': 'root',
-        'PASSWORD': 'oUrHCoGTvrV5ChBnJohP',
-        'HOST':'containers-us-west-166.railway.app',
-        'PORT':'7502',
+        'PASSWORD': 'root',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
-
-
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.postgresql',
-   #     'NAME': 'railway',
-      #  'USER': 'postgres',
-     #   'PASSWORD': '2IyRAqQPicSfIZncTB5U',
-      #  'HOST':'containers-us-west-37.railway.app',
-      #  'PORT':'5712',
- #   }
-#}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
